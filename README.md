@@ -5,13 +5,13 @@ Find the YouTube videos that beat their own channel's normal: the topics and pac
 ```
 $ python yt_outliers.py --dry-run
 13 videos read, 2 Shorts/unparseable dropped
-2 outlier(s) -> outliers_out/digest.md
+2 outlier(s) -> outliers_out_sample/digest.md
   7.13x  I styled 1 shirt 7 ways  (Lagos Thrift Hauls)
   6.86x  Street style at the Garden City mall  (Street Style PH)
   not judged: Tailor Talk (2 video(s))
 ```
 
-One Python file, standard library only, no API key needed for the demo. The sample channels in `fixtures/videos.json` are invented.
+One Python file, standard library only, no API key needed for the demo. The sample channels in `fixtures/videos.json` are invented. A `--dry-run` writes to its own `outliers_out_sample/` folder, so sample data never mixes with your real results.
 
 ## How it decides
 

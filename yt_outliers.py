@@ -218,10 +218,11 @@ def parse_args(argv):
     ap.add_argument("--since-days", type=int, help="only flag videos published in the last N days")
     ap.add_argument("--max-videos", type=int, default=50, help="newest uploads read per channel")
     ap.add_argument("--include-shorts", action="store_true")
-    ap.add_argument("--out", default="outliers_out")
-    ap.add_argument("--rows", default="outliers_out/rows.json")
+    ap.add_argument("--out", help="output folder (default outliers_out; outliers_out_sample with --dry-run)")
+    ap.add_argument("--rows", help="rows file (default OUT/rows.json)")
     ap.add_argument("--csv", help="also write every video (outliers marked) to this CSV")
-    ap.add_argument("--dry-run", action="store_true", help="use the bundled sample data; no API key, no network")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="use the bundled sample data; no API key, no network, and its own output folder")
     ap.add_argument("--today", help=argparse.SUPPRESS)  # fixed date for tests
     ap.add_argument("--version", action="version", version=__version__)
     return ap.parse_args(argv)
@@ -229,6 +230,8 @@ def parse_args(argv):
 
 def main(argv=None, get=None):
     a = parse_args(argv)
+    a.out = a.out or ("outliers_out_sample" if a.dry_run else "outliers_out")  # sample data never mixes with real
+    a.rows = a.rows or str(Path(a.out) / "rows.json")
     today = dt.date.fromisoformat(a.today) if a.today else dt.date.today()
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     if a.dry_run:

@@ -5,3 +5,4 @@ outliers_out/
 build/
 channels.txt
 .env
+outliers_out_sample/

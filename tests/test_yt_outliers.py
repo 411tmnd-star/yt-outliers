@@ -185,6 +185,25 @@ class Cli(unittest.TestCase):
             rc, out, _ = self.run_main("--dry-run", "--out", str(o), "--rows", str(o / "rows.json"))
             self.assertEqual(len(json.loads((o / "rows.json").read_text())), 11)  # re-run: no duplicates
 
+    def test_dry_run_never_touches_the_real_output_folder(self):
+        with tempfile.TemporaryDirectory() as t:
+            old = os.getcwd()
+            os.chdir(t)
+            try:
+                rc, _, _ = self.run_main("--dry-run", "--today", "2026-10-18")
+                self.assertEqual(rc, 0)
+                self.assertTrue(os.path.exists("outliers_out_sample/digest.md"))
+                self.assertTrue(os.path.exists("outliers_out_sample/rows.json"))
+                self.assertFalse(os.path.exists("outliers_out"))
+                # a real run afterwards starts from nothing, not from the sample videos
+                rc, _, _ = self.run_main("--channels", "UCgood", "--today", "2026-10-18", get=FakeApi(n_videos=10))
+                self.assertEqual(rc, 0)
+                rows = json.loads(Path("outliers_out/rows.json").read_text())
+                self.assertEqual({r["channel_id"] for r in rows}, {"UCa"})
+                self.assertNotIn("Lagos Thrift Hauls", Path("outliers_out/digest.md").read_text(encoding="utf-8"))
+            finally:
+                os.chdir(old)
+
     def test_since_days(self):
         with tempfile.TemporaryDirectory() as t:
             rc, out, _ = self.run_main("--dry-run", "--out", t, "--rows", os.path.join(t, "r.json"),
