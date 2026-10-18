@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+outliers_out/
+*.egg-info/
+build/
+channels.txt
+.env

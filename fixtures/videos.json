@@ -1,0 +1,234 @@
+[
+ {
+  "kind": "youtube#video",
+  "id": "lt001",
+  "snippet": {
+   "title": "Thrift haul: 5 shirts under 10k",
+   "channelId": "UCsampleLagosThrift000001",
+   "channelTitle": "Lagos Thrift Hauls",
+   "publishedAt": "2026-09-02T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT11M20S"
+  },
+  "statistics": {
+   "viewCount": "4100",
+   "likeCount": "210",
+   "commentCount": "33"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "lt002",
+  "snippet": {
+   "title": "How I wash thrifted clothes",
+   "channelId": "UCsampleLagosThrift000001",
+   "channelTitle": "Lagos Thrift Hauls",
+   "publishedAt": "2026-09-09T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT9M5S"
+  },
+  "statistics": {
+   "viewCount": "3800",
+   "likeCount": "180",
+   "commentCount": "21"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "lt003",
+  "snippet": {
+   "title": "Yaba market walk-through",
+   "channelId": "UCsampleLagosThrift000001",
+   "channelTitle": "Lagos Thrift Hauls",
+   "publishedAt": "2026-09-16T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT14M"
+  },
+  "statistics": {
+   "viewCount": "4600",
+   "likeCount": "240",
+   "commentCount": "40"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "lt004",
+  "snippet": {
+   "title": "I styled 1 shirt 7 ways",
+   "channelId": "UCsampleLagosThrift000001",
+   "channelTitle": "Lagos Thrift Hauls",
+   "publishedAt": "2026-09-23T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT8M40S"
+  },
+  "statistics": {
+   "viewCount": "31000",
+   "likeCount": "2600",
+   "commentCount": "410"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "lt005",
+  "snippet": {
+   "title": "Thrift vs new: price check",
+   "channelId": "UCsampleLagosThrift000001",
+   "channelTitle": "Lagos Thrift Hauls",
+   "publishedAt": "2026-09-30T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT12M"
+  },
+  "statistics": {
+   "viewCount": "5200",
+   "likeCount": "300",
+   "commentCount": "52"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "lt006",
+  "snippet": {
+   "title": "Quick fit check",
+   "channelId": "UCsampleLagosThrift000001",
+   "channelTitle": "Lagos Thrift Hauls",
+   "publishedAt": "2026-10-01T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT38S"
+  },
+  "statistics": {
+   "viewCount": "250000",
+   "likeCount": "9000",
+   "commentCount": "120"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "tt001",
+  "snippet": {
+   "title": "Measuring for a kaftan",
+   "channelId": "UCsampleTailorTalk0000002",
+   "channelTitle": "Tailor Talk",
+   "publishedAt": "2026-09-10T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT18M"
+  },
+  "statistics": {
+   "viewCount": "900",
+   "likeCount": "40",
+   "commentCount": "5"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "tt002",
+  "snippet": {
+   "title": "Agbada pattern basics",
+   "channelId": "UCsampleTailorTalk0000002",
+   "channelTitle": "Tailor Talk",
+   "publishedAt": "2026-09-20T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT22M"
+  },
+  "statistics": {
+   "viewCount": "1100",
+   "likeCount": "52",
+   "commentCount": "9"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "ss001",
+  "snippet": {
+   "title": "Street style at the Garden City mall",
+   "channelId": "UCsampleStreetStyle000003",
+   "channelTitle": "Street Style PH",
+   "publishedAt": "2026-03-05T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT6M"
+  },
+  "statistics": {
+   "viewCount": "48000",
+   "likeCount": "3100",
+   "commentCount": "280"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "ss002",
+  "snippet": {
+   "title": "What PH students wear",
+   "channelId": "UCsampleStreetStyle000003",
+   "channelTitle": "Street Style PH",
+   "publishedAt": "2026-08-12T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT7M10S"
+  },
+  "statistics": {
+   "viewCount": "7000",
+   "likeCount": "400",
+   "commentCount": "61"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "ss003",
+  "snippet": {
+   "title": "Rating outfits on campus",
+   "channelId": "UCsampleStreetStyle000003",
+   "channelTitle": "Street Style PH",
+   "publishedAt": "2026-09-03T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT9M"
+  },
+  "statistics": {
+   "viewCount": "6400",
+   "likeCount": "390",
+   "commentCount": "70"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "ss004",
+  "snippet": {
+   "title": "Ankara street looks",
+   "channelId": "UCsampleStreetStyle000003",
+   "channelTitle": "Street Style PH",
+   "publishedAt": "2026-09-28T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "PT8M"
+  },
+  "statistics": {
+   "viewCount": "7600",
+   "likeCount": "450",
+   "commentCount": "66"
+  }
+ },
+ {
+  "kind": "youtube#video",
+  "id": "ss005",
+  "snippet": {
+   "title": "Livestream replay",
+   "channelId": "UCsampleStreetStyle000003",
+   "channelTitle": "Street Style PH",
+   "publishedAt": "2026-10-02T15:00:00Z"
+  },
+  "contentDetails": {
+   "duration": "P0D"
+  },
+  "statistics": {
+   "viewCount": "300"
+  }
+ }
+]
